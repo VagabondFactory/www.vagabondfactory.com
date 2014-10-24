@@ -1,142 +1,176 @@
-/*
- * HTML5 Boilerplate
- *
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- *
- * Detailed information about this CSS: h5bp.com/css
- *
- * ==|== normalize ==========================================================
- */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  height: 100%;
+  overflow: hidden;
+}
 
+article,
+aside,
+section {
+  display: block;
+}
 
-/* =============================================================================
-   HTML5 display definitions
-   ========================================================================== */
+body {
+  margin: 0;
+  color: #555;
+  width: 100%;
+  height: 100%;
+  background: #FFF;
+  font-weight: 300;
+  font-family: 'Open Sans';
+  text-align: center;
 
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
-audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
-audio:not([controls]) { display: none; }
-[hidden] { display: none; }
+  display: -webkit-flex;
+  display: flex;
+}
 
+article {
+  margin: auto;
+}
 
-/* =============================================================================
-   Base
-   ========================================================================== */
-
-/*
- * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
- * 2. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
- */
-
-html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-
-body { margin: 0; font-size: 1em; line-height: 1.4; }
-
-body, button, input, select, textarea { font-family: 'Lucida Grande', Helvetica, Arial, sans-serif; color: #222; }
-
-/*
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection declarations have to be separate
- * Also: hot pink! (or customize the background color to match your design)
- */
-
-::-moz-selection { background: #bada55; color: #fff; text-shadow: none; }
-::selection { background: #bada55; color: #fff; text-shadow: none; }
-
-/* =============================================================================
-   Links
-   ========================================================================== */
-
-a { color: #555; text-decoration: none; }
-a:visited { color: #555; }
-a:hover { color: #555; text-decoration: underline; }
-a:focus { outline: thin dotted; }
-
-/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
-a:hover, a:active { outline: 0; }
-
-/* =============================================================================
-   Embedded content
-   ========================================================================== */
-
-/*
- * 1. Improve image quality when scaled in IE7: h5bp.com/d
- * 2. Remove the gap between images and borders on image containers: h5bp.com/e
- */
-
-img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
-
-/* ==|== primary styles =====================================================
-   Author:
-   ========================================================================== */
-
-body { background: #111 url(../img/bg.png) 0 0 repeat; padding: 0 20px 20px; }
-
-article { text-align: center; }
-
-h1 { font-size: 3.5em; text-shadow: 0 2px 3px #444; color: #222; margin-bottom: 0; }
-
-.description { font-style: italic; font-weight: normal; text-shadow: 0 2px 3px #444; color: #F90; margin-bottom: 1.5em; }
+h1 {
+  font-family: 'Poiret One';
+  font-size: 3.5em;
+  margin: 0;
+}
 
 aside {
-  position: relative;
-  margin: 0 auto; background: #222; padding: 20px; font-size: 22px;
-  color: #555; text-shadow: 0px 2px 3px #171717;
-  -webkit-box-shadow: 0 2px 3px #444; -moz-box-shadow: 0 2px 3px #444; -ms-box-shadow: 0 2px 3px #444; -o-box-shadow: 0 2px 3px #444; box-shadow: 0 2px 3px #444;
-  -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px;
-}
-aside h2 { margin: 0; font-size: 1em; }
-aside p { margin: .5em 0 0; }
-aside span { font-size: .7em; }
-
-.vcard { position: absolute; right: 22px; top: 22px; width: 30px; height: 30px; -webkit-border-radius: .5em; -moz-border-radius: .5em; -ms-border-radius: .5em; -o-border-radius: .5em; border-radius: .5em; }
-
-/* IE 8 */
-.lt-ie9 aside { width: 400px; margin-top: 3em; }
-.lt-ie9 .description { font-family: "Parisienne"; font-size: 1.4em; font-style: normal; }
-.lt-ie9 h1 { font-family: 'Alfa Slab One'; }
-
-/* ==|== media queries ======================================================
-   EXAMPLE Media Query for Responsive Design.
-   This example overrides the primary ('mobile first') styles
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (max-width: 480px) {
-  h1 { font-size: 3em; }
-}
-   
-@media only screen and (max-width: 480px) {
-  aside { width: auto; }
+  padding: 20px;
+  font-size: 22px;
 }
 
-@media only screen and (min-width: 481px) {
-  aside { width: 400px; margin-top: 3em; }
-  .fontface .description { font-family: "Parisienne"; font-size: 1.4em; font-style: normal; }
-  .fontface h1 { font-family: 'Alfa Slab One'; }
+h2 {
+  font-family: 'Poiret One';
+  font-size: 1.6em;
+  margin: 0 0 10px 0;
 }
 
-/* Hide from both screenreaders and browsers: h5bp.com/u */
-.hidden { display: none !important; visibility: hidden; }
+span {
+  display: block;
+  font-size: .7em;
+}
 
-/* ==|== print styles =======================================================
-   Print styles.
-   Inlined to avoid required HTTP connection: h5bp.com/r
-   ========================================================================== */
+p {
+  margin: 0;
+}
 
-@media print {
-  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
-  a, a:visited { text-decoration: underline; }
-  a[href]:after { content: " (" attr(href) ")"; }
-  abbr[title]:after { content: " (" attr(title) ")"; }
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
-  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
-  thead { display: table-header-group; } /* h5bp.com/t */
-  tr, img { page-break-inside: avoid; }
-  img { max-width: 100% !important; }
-  @page { margin: 0.5cm; }
-  p, h2, h3 { orphans: 3; widows: 3; }
-  h2, h3 { page-break-after: avoid; }
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes bounceInDown {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  100% {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes bounceInDown {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  100% {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.bounceInDown {
+  -webkit-animation-name: bounceInDown;
+  animation-name: bounceInDown;
+}
+
+@-webkit-keyframes bounceInLeft {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0);
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(25px, 0, 0);
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px, 0, 0);
+  }
+
+  100% {
+    -webkit-transform: none;
+    transform: none;
+  }
 }
