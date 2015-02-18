@@ -24,6 +24,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/css\/bg-desktop.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 276059,
+		"inputAbbreviatedPath": "\/css\/bg-desktop.jpg",
+		"outputAbbreviatedPath": "\/css\/bg-desktop.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/css\/bg-desktop@2x.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.02884e+06,
+		"inputAbbreviatedPath": "\/css\/bg-desktop@2x.jpg",
+		"outputAbbreviatedPath": "\/css\/bg-desktop@2x.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
 	"\/css\/bg-mobile.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -33,7 +55,18 @@
 		"outputAbbreviatedPath": "\/css\/bg-mobile.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
+		},
+	"\/css\/bg-mobile@2x.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 636055,
+		"inputAbbreviatedPath": "\/css\/bg-mobile@2x.jpg",
+		"outputAbbreviatedPath": "\/css\/bg-mobile@2x.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
 		},
 	"\/css\/style.css": {
 		"fileType": 16,
@@ -76,7 +109,7 @@
 		"outputAbbreviatedPath": "\/css\/style.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 2,
 		"relativeURLS": 0,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
