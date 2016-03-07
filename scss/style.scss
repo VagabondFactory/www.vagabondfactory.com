@@ -1,6 +1,7 @@
 
 $white: #fff;
 $black: #000;
+$selection-color: #FF5722;
 
 html {
   font-family: sans-serif;
@@ -41,7 +42,7 @@ article {
     text-align: center;
   }
   h1::selection, aside p span::selection {
-    color: #FF5722;
+    color: $selection-color;
     background-color: transparent;
   }
   aside {
