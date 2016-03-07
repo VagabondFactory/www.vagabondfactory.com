@@ -1,5 +1,6 @@
+
 $white: #fff;
-$brand-color: #A86448;
+$black: #000;
 
 html {
   font-family: sans-serif;
@@ -13,13 +14,12 @@ article, aside, section {
 }
 body {
   margin: 0;
-  color: $white;
+  color: rgba($black, .9);
   min-height: 100%;
-  font-weight: 400;
-  font-family: 'Poiret One';
+  font-weight: 300;
+  font-family: 'Josefin Sans', Helvetica, sans-serif;
   line-height: 1;
-  background: $brand-color url('../img/bg-mobile.jpg') 50% 100% no-repeat;
-  background-size: cover;
+  background: $white;
   display: flex;
 }
 .hidden {
@@ -34,24 +34,17 @@ article {
   align-items: center;
 
   h1 {
+    font-weight: 300;
     font-size: 3.5em;
     font-size: 11vw;
     margin: 0 1vw;
     text-align: center;
-    font-weight: 400;
   }
-    aside {
+  aside {
     padding: 20px;
     text-align: center;
     line-height: 1.4;
-
-    h2 {
-      font-family: 'Poiret One';
-      font-weight: 400;
-      font-size: 1.6em;
-      font-size: 7vw;
-      margin: 0 0;
-    }
+    color: rgba($black, .7);
 
     span {
       display: block;
@@ -65,21 +58,9 @@ article {
   }
 }
 @media (min-width:768px) {
-  body {
-    background-image: url('../img/bg-desktop.jpg');
-  }
   article {
     h1 {
       font-size: 8vw;
-    }
-    aside {
-      h2 {
-        font-size: 5vw;
-      }
-
-      span {
-        font-size: 2vw;
-      }
     }
   }
 }
@@ -91,12 +72,6 @@ article {
     .links {
       li {
         font-size: 5vw;
-
-        a {
-          p  {
-            font-size: 2vw;
-          }
-        }
       }
     }
   }
