@@ -40,20 +40,24 @@ article {
     margin: 0 1vw;
     text-align: center;
   }
+  h1::selection, aside p span::selection {
+    color: #FF5722;
+    background-color: transparent;
+  }
   aside {
     padding: 20px;
     text-align: center;
     line-height: 1.4;
     color: rgba($black, .7);
 
-    span {
-      display: block;
-      font-size: .7em;
-      font-size: 4vw;
-    }
-
     p {
       margin: 0;
+
+      span {
+        display: block;
+        font-size: .7em;
+        font-size: 4vw;
+      }
     }
   }
 }
