@@ -42,7 +42,8 @@ article {
     line-height: 1.2; }
   article h2 {
     font-size: 1.8rem;
-    margin-left: 1.2rem; }
+    margin-left: 1.2rem;
+    color: rgba(255, 255, 255, 0.9); }
   article h1::selection,
   article h2::selection,
   article aside p span::selection {
