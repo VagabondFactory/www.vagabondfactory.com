@@ -1,85 +1,92 @@
-
-$white: #fff;
-$black: #000;
 $selection-color: #FF5722;
-
 html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  height: 100%;
-  overflow: hidden;
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    height: 100%;
+    overflow: hidden;
 }
-article, aside, section {
-  display: block;
+
+article,
+aside,
+section {
+    display: block;
 }
+
 body {
-  margin: 0;
-  color: rgba($black, .9);
-  min-height: 100%;
-  font-weight: 300;
-  font-family: 'Josefin Sans', Helvetica, sans-serif;
-  line-height: 1;
-  background: $white;
-  display: flex;
-}
-.hidden {
-  display: none;
-  visibility: hidden;
-}
-article {
-  flex: 1 1 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  h1 {
+    margin: 0;
+    color: white;
+    min-height: 100%;
     font-weight: 300;
-    font-size: 3.5em;
-    font-size: 11vw;
-    margin: 0 1vw;
-    text-align: center;
-  }
-  h1::selection, aside p span::selection {
-    color: $selection-color;
-    background-color: transparent;
-  }
-  aside {
-    padding: 20px;
-    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     line-height: 1.4;
-    color: rgba($black, .7);
-
-    p {
-      margin: 0;
-
-      span {
-        display: block;
-        font-size: .7em;
-        font-size: 6vw;
-      }
-    }
-  }
+    background-color: #325a3a;
+    display: flex;
+    background-image: url('../img/bg-large.jpg'), url('../img/bg-large-thumb.jpg');
+    background-position: top right;
+    background-size: cover;
 }
-@media (min-width:768px) {
-  article {
-    h1 {
-      font-size: 8vw;
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+article {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 2rem;
+    h1,
+    h2 {
+        font-weight: 300;
+        font-size: 3.5rem;
+        margin: 0;
+        line-height: 1.2;
+    }
+    h2 {
+        font-size: 1.8rem;
+        margin-left: 1.2rem;
+    }
+    h1::selection,
+    h2::selection,
+    aside p span::selection {
+        color: $selection-color;
+        background-color: transparent;
     }
     aside {
-      p {
-        span {
-          font-size: 4vw;
+        padding: .5rem 1.4rem;
+        color: rgba(white, .9);
+        p {
+            font-size: 1.2rem;
+            margin: 0;
+            span {
+                display: block;
+            }
         }
-      }
     }
-  }
 }
-@media (min-width:992px) {
-  article {
-    h1 {
-      font-size: 10vw;
+
+@media (max-width:600px) {
+    body {
+        background-image: url('../img/bg-small.jpg'), url('../img/bg-small-thumb.jpg');
+        article {
+            padding: 1rem;
+            h1 {
+                font-size: 2.3rem;
+            }
+            h2 {
+                font-size: 1.1rem;
+                margin-left: .7rem;
+            }
+            aside {
+                padding: .5rem .9rem;
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
     }
-  }
 }
